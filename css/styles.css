@@ -5,6 +5,7 @@
   --portfolio-button-color: #F4F4FD;
   --hover-link-color: #404BBF;
   --team-color: #F4F4FD;
+  --footer-social-hover-color: #31D0AA;
 }
 
 h1,
@@ -357,6 +358,11 @@ body {
   fill: var(--portfolio-button-color);
 }
 
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--hover-link-color);
+}
+
 
 /* ---------------CUSTOMERS------------------------------- */
 
@@ -384,6 +390,12 @@ body {
   gap: 24px;
 }
 
+.customers-item {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+
+
 .customers-link {
   display: flex;
   justify-content: center;
@@ -394,6 +406,18 @@ body {
   border: 1px solid #8e8f99;
   border-radius: 4px;
 }
+
+.customers-icon {
+  fill: currentColor;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border-color: var(--hover-link-color);
+  color: var(--hover-link-color);
+}
+
+
 
 /*--------------------------- FOOTER ---------------------*/
 
@@ -472,7 +496,14 @@ body {
   align-items: center;
 }
 
+.footer-icon {
+  fill: var(--portfolio-button-color);
+}
 
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--footer-social-hover-color);
+}
 
 
 /* ------------PORTFOLIO------------- */
