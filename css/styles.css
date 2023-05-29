@@ -557,6 +557,7 @@ body {
 
 .portf-card-item {
   width: calc((100% - 48px) / 3);
+  display: block;
 }
 
 .portf-card-item:hover,
